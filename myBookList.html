@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BOOKLIST</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;   
+    }
+    body{
+        background-color: midnightblue;
+    }
+
+    .wrapper{
+        height: auto;
+        background-color: #89CFF0 ;
+    }
+    .banner{
+        background-color: midnightblue;
+        color: white;
+        height: 10vh;
+        text-align: center;
+        padding-top: 0.8rem;
+        word-spacing: 3px;
+    }
+    .main{
+        margin: 0 20rem;
+        width: 60%;
+        padding: 0;        
+    }
+    .main ul li{
+        height: 60px;
+        width: auto;
+        border-bottom: 1px midnightblue dashed;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        font-size: 20px;
+        color: rgb(7, 18, 54);
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    ul li p{
+        width: max-content;
+    }
+    ul li h5{
+        width: max-content;
+    }
+     button{
+        background-color:rgb(0, 0, 180) ;
+        border-radius:15px;
+        color: white;
+        width:100px;
+        height: 35px;
+        text-align: center;
+        border: none;
+        font-family: 'Calistoga', cursive;
+    }
+    button:hover{
+        background-color:navy;
+         box-shadow: 1px 1px 3px 1px navy,-1px -1px 7px 1px  crimson;
+    }
+    .wrapper li h5{
+        text-align: center;
+    }
+    .wrapper form{
+        text-align: center;
+        padding: 10px;   
+    }
+    .wrapper input{
+        width: 300px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right:5px;
+        font-size: 20px;
+        border: none;
+        color:midnightblue;
+    }
+    
+    ul .heading{
+        max-width: 530px;
+    }
+    .wrapper form button{
+        margin: 0 20px;
+    }
+    .wrapper input:hover{
+        box-shadow:2px 2px 5px 1px navy,-2px -2px 5px 1px  crimson;
+        
+    }
+     ::placeholder{
+        color:midnightblue;
+        opacity: 0.4;
+    }
+    
+</style>
+<body>
+        <div class="wrapper">
+        <div class="banner">
+            <h1>Reader's Read</h1>
+            <p>Enjoy the reading!</p>
+        </div>
+        <div class="main">
+            <ul>
+                <li class="heading">
+                    <h3>Book</h3>
+                    <h4>Author</h4>
+                </li>
+                <li>
+                    <p>My Jumo Reader 1</p>
+                    <h5>Jim jam</h5>
+                    <button class="del">Delete</button>
+                </li>
+                <li>
+                    <p>Tornado  Reader </p>
+                    <h5>Walk talk</h5>
+                     <button class="del">Delete</button>
+                </li>
+                <li>
+                    <p>Infinity worlds</p>
+                    <h5>Popeye jam</h5>
+                    <button class="del">Delete</button>
+                </li>
+                <li>
+                    <p>Not Written Yet</p>
+                    <h5>Unknown</h5>
+                    <button class="del">Delete</button>
+                </li>
+                <li>
+                    <p>Alpha Beta Gamma</p>
+                    <h5>King Kong</h5>
+                    <button class="del">Delete</button>
+                </li>
+                
+
+            </ul>
+        </div>
+        <form name="my_form">
+            <input type="text" id = "bName" placeholder="book name" >
+             <input type="text" id ="auth" placeholder="author" > 
+            <button id="add" onfocus="this.value">Add Read</button>
+        </form>
+<script src="booklist.js" ></script>
+</body>
+</html>
