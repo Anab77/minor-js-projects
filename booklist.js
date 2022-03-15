@@ -16,8 +16,8 @@ function addBook(event){
     let auth = my_form.querySelector("#auth").value; 
 
     if(bName.length === 0 && auth.length === 0){
-        ulList.remove()
         alert("add a book.")
+        return false;
     }
     let ulList = document.querySelector('ul');
     let li = document.createElement('li');
